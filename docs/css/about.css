@@ -1,1 +1,35 @@
-à propos 
+/*====================================
+      ABOUT HERO
+====================================*/
+
+.about-hero{
+    width:100%;
+    min-height:60vh;
+    background:url("../images/foragelogo.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.about-hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.65);
+}
+
+.about-overlay{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.about-overlay h1{
+    color:#fff;
+    font-size:
