@@ -1,0 +1,88 @@
+/*=========================================
+        HERO - RÉALISATIONS
+=========================================*/
+
+.hero-real{
+    width:100%;
+    min-height:60vh;
+    background:url("../images/foragelogo.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-real::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.hero-overlay{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero-overlay h1{
+    color:#fff;
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-overlay p{
+    color:#fff;
+    font-size:21px;
+    line-height:1.8;
+}
+
+/*=========================================
+        GRILLE DES PROJETS
+=========================================*/
+
+.projects{
+    max-width:1300px;
+    margin:80px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 22px 45px rgba(0,0,0,.18);
+}
+
+.project-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.project-card h2{
+    color:#0077cc;
+    font-size:28px;
+    margin:20px;
+}
+
+.project-card p{
+    color:#555;
+    font-size:18px;
+    line-height:1.7;
+    margin:0 20px 25px;
+}
+
+/*=========================================
+        BOUT
