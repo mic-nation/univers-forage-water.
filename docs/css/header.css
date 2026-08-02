@@ -1,1 +1,188 @@
-navigation 
+/* ===========================
+   HEADER - UNIVERS FORAGE WATER
+=========================== */
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    transition:.4s;
+}
+
+/* Logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:12px;
+}
+
+.logo span{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+}
+
+/* Navigation */
+
+.navbar{
+    display:flex;
+    align-items:center;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    margin-left:28px;
+}
+
+.navbar ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar ul li a:hover{
+
+    color:#00CFFF;
+
+}
+
+/* Bouton */
+
+.btn-header{
+
+    background:#0099ff;
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    margin-left:30px;
+
+    transition:.3s;
+
+}
+
+.btn-header:hover{
+
+    background:#0066cc;
+
+}
+
+/* Hamburger */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:32px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.navbar{
+
+position:absolute;
+
+top:90px;
+
+left:0;
+
+width:100%;
+
+background:#022a47;
+
+display:none;
+
+padding:20px 0;
+
+}
+
+.navbar.active{
+
+display:block;
+
+animation:fade .3s;
+
+}
+
+.navbar ul{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.navbar ul li{
+
+margin:18px 0;
+
+}
+
+.btn-header{
+
+display:none;
+
+}
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(-15px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
