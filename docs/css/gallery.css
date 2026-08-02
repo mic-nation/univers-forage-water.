@@ -1,1 +1,116 @@
-galerie 
+/*=========================================
+        HERO GALERIE
+=========================================*/
+
+.gallery-hero{
+    width:100%;
+    min-height:60vh;
+    background:url("../images/foragelogo.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.gallery-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.gallery-overlay{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.gallery-overlay h1{
+    color:#fff;
+    font-size:55px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.gallery-overlay p{
+    color:#fff;
+    font-size:21px;
+    line-height:1.8;
+}
+
+/*=========================================
+        GALERIE PHOTOS
+=========================================*/
+
+.gallery-container{
+    max-width:1300px;
+    margin:80px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.gallery-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
+    cursor:pointer;
+    transition:.4s;
+}
+
+.gallery-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.gallery-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.1);
+}
+
+/* Overlay */
+
+.gallery-card::after{
+    content:"Voir l'image";
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,119,204,.75);
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+    opacity:0;
+    transition:.4s;
+}
+
+.gallery-card:hover::after{
+    opacity:1;
+}
+
+/*=========================================
+        SECTION VIDÉOS
+=========================================*/
+
+.video-section{
+    background:#f7f9fc;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.video-section h2{
+    color:#0077cc;
+    font-size:42px;
+    margin-bottom:20
