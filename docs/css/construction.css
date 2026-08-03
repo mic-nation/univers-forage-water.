@@ -1,0 +1,251 @@
+/*=========================================
+        HERO CONSTRUCTION
+=========================================*/
+
+.hero-construction{
+    width:100%;
+    min-height:70vh;
+    background:url("../images/foragelogo.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-construction::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.overlay{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+    color:#fff;
+}
+
+.overlay h1{
+    font-size:55px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.overlay p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/*=========================================
+        PRESENTATION
+=========================================*/
+
+.presentation{
+    padding:80px 20px;
+    background:#f8f9fa;
+    text-align:center;
+}
+
+.presentation h2{
+    color:#0077cc;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.presentation p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
+}
+
+/*=========================================
+        CARTES
+=========================================*/
+
+.construction-grid{
+    max-width:1300px;
+    margin:60px auto 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.construction-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.construction-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+}
+
+.construction-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.construction-card h3{
+    color:#0077cc;
+    margin:20px;
+    font-size:28px;
+}
+
+.construction-card p{
+    margin:0 20px 25px;
+    color:#666;
+    line-height:1.7;
+    font-size:18px;
+}
+
+/*=========================================
+        AVANTAGES
+=========================================*/
+
+.avantages{
+    padding:80px 20px;
+    background:#fff;
+}
+
+.avantages h2{
+    text-align:center;
+    color:#0077cc;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.avantages-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.avantage{
+    background:#f8f9fa;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.avantage:hover{
+    transform:translateY(-8px);
+}
+
+.avantage h3{
+    color:#0077cc;
+    margin-bottom:15px;
+}
+
+.avantage p{
+    color:#555;
+    line-height:1.7;
+}
+
+/*=========================================
+        CONTACT
+=========================================*/
+
+.contact-action{
+    background:#0077cc;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.contact-action h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact-action p{
+    font-size:20px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.action-buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:block;
+    max-width:550px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:21px;
+    font-weight:bold;
+    color:#fff;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.phone{
+    background:#0d6efd;
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+.hero-construction{
+    min-height:55vh;
+}
+
+.overlay h1{
+    font-size:36px;
+}
+
+.overlay p{
+    font-size:18px;
+}
+
+.presentation h2,
+.avantages h2,
+.contact-action h2{
+    font-size:30px;
+}
+
+.presentation p,
+.contact-action p{
+    font-size:17px;
+}
+
+.construction-card img{
+    height:220px;
+}
+
+.construction-card h3{
+    font-size:24px;
+}
+
+.btn{
+    font-size:18px;
+    padding:18px;
+}
+
+}
