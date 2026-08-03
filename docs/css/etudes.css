@@ -1,0 +1,142 @@
+.hero-etudes{
+height:70vh;
+background:url("../images/foragelogo.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+text-align:center;
+}
+
+.hero-etudes::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.6);
+}
+
+.overlay{
+position:relative;
+z-index:2;
+color:#fff;
+max-width:900px;
+padding:20px;
+}
+
+.overlay h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.overlay p{
+font-size:22px;
+line-height:1.7;
+}
+
+.presentation{
+padding:70px 20px;
+background:#f7f7f7;
+text-align:center;
+}
+
+.presentation h2{
+color:#0b6efd;
+font-size:38px;
+margin-bottom:20px;
+}
+
+.presentation p{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+}
+
+.equipements{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.equipement{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.equipement:hover{
+transform:translateY(-10px);
+}
+
+.equipement img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.equipement h3{
+color:#0b6efd;
+margin:20px 0;
+}
+
+.equipement p{
+padding:0 20px 30px;
+}
+
+.actions{
+padding:70px 20px;
+text-align:center;
+}
+
+.actions h2{
+margin-bottom:30px;
+color:#0b6efd;
+}
+
+.btn{
+display:block;
+max-width:420px;
+margin:20px auto;
+padding:20px;
+border-radius:50px;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+color:#fff;
+transition:.3s;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.phone{
+background:#0b6efd;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+.overlay h1{
+font-size:38px;
+}
+
+.overlay p{
+font-size:18px;
+}
+
+.presentation h2{
+font-size:30px;
+}
+
+.btn{
+font-size:18px;
+}
+
+}
